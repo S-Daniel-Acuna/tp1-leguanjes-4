@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ubicación - TP N°1 Lenguaje IV</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="card">
+    <h1>Ubicación</h1>
+
+    <label for="nombre">Nombre Ubicación</label>
+    <input type="text" id="nombre" placeholder="Nombre Ubicacion">
+
+    <label for="latitud">Latitud</label>
+    <input type="text" id="latitud" placeholder="28.3537921">
+
+    <label for="longitud">Longitud</label>
+    <input type="text" id="longitud" placeholder="-81.5618197">
+
+    <button id="btnAbrir">Abrir Ubicación</button>
+
+    <p id="mensajeError" class="error"></p>
+  </div>
+
+  <!-- Mapa embebido que se actualiza al presionar el botón -->
+  <div class="mapa-container" id="mapaContainer">
+    <iframe
+      id="mapaIframe"
+      width="100%"
+      height="400"
+      style="border:0"
+      loading="lazy"
+      allowfullscreen>
+    </iframe>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
